@@ -129,9 +129,9 @@ const zh: SiteContent = {
     statement: '面向 HarmonyOS NEXT 的原生数学工作区。',
     links: [
       { label: '使用帮助', href: '/docs', external: true },
-      { label: '隐私政策', href: '/privacy/' },
       { label: '用户协议', href: '/agreement/' },
       { label: '问题反馈', href: 'https://github.com/StarHeartY/CalculatorX/issues/new', external: true },
+      { label: '隐私政策', href: '/privacy/' },
     ],
     copyrightLabel: '版权所有',
     copyright: 'StartYi',

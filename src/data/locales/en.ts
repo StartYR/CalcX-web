@@ -128,10 +128,10 @@ const en: SiteContent = {
   footer: {
     statement: 'A native math workspace for HarmonyOS NEXT.',
     links: [
-      { label: 'Documentation', href: '/docs', external: true },
-      { label: 'Privacy', href: '/privacy/' },
+      { label: 'Help', href: '/docs', external: true },
       { label: 'Agreement', href: '/agreement/' },
       { label: 'Report an issue', href: 'https://github.com/StarHeartY/CalculatorX/issues/new', external: true },
+      { label: 'Privacy', href: '/privacy/' },
     ],
     copyrightLabel: 'Copyright',
     copyright: 'StartYi',
