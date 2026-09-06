@@ -43,11 +43,17 @@
         <h2>5. 联系我们</h2>
         <p>如您对本隐私声明有任何疑问或建议，欢迎通过以下方式联系开发者：</p>
         <p><strong>邮箱：</strong>support@startyi.com</p>
-        <p><strong>官网：</strong>calcx.startyi.com</p>
+        <p><strong>官网：</strong>https://calcx.startyi.com</p>
 
         <footer>
-            &copy; 2026 Yi Rui. 保留一切权利。
+            版权所有 © <span id="copyright-year">2026</span> StartYi
         </footer>
+        <script>
+            (function () {
+                var y = new Date().getFullYear();
+                if (y > 2026) document.getElementById('copyright-year').textContent = '2026–' + y;
+            })();
+        </script>
     </div>
 </body>
 

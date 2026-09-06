@@ -15,7 +15,7 @@
         <div class="update-time">生效日期：2026 年 8 月</div>
         <div class="update-time">版本号：v1.2.0</div>
 
-        <p>欢迎您使用 CalcX（以下称"本应用"）。本应用由独立开发者易睿（以下称"开发者"）基于 <strong>GNU General Public License v3.0（GPL 3.0）</strong>
+        <p>欢迎您使用 CalcX（以下称"本应用"）。本应用由独立开发者 StartYi（易睿）（以下称"开发者"）基于 <strong>GNU General Public License v3.0（GPL 3.0）</strong>
             协议开源发布。在您下载、安装及使用本应用前，请务必审慎阅读并充分理解本协议的所有条款。</p>
 
         <h2>一、 协议的接受与变更</h2>
@@ -91,14 +91,20 @@
 
         <h2>十、 联系开发者</h2>
         <p>如果您对本协议或 CalcX 有任何疑问、意见或技术反馈，欢迎通过以下官方渠道与开发者联系：</p>
-        <p><strong>官方网站：</strong>calcx.startyi.com</p>
+        <p><strong>官方网站：</strong>https://calcx.startyi.com</p>
         <p><strong>技术支持：</strong>support@startyi.com</p>
         <p><strong>Bug 报告：</strong>bug@startyi.com</p>
         <p><strong>意见反馈：</strong>feedback@startyi.com</p>
 
         <footer>
-            &copy; 2026 Yi Rui. 保留一切权利。
+            版权所有 © <span id="copyright-year">2026</span> StartYi
         </footer>
+        <script>
+            (function () {
+                var y = new Date().getFullYear();
+                if (y > 2026) document.getElementById('copyright-year').textContent = '2026–' + y;
+            })();
+        </script>
     </div>
 </body>
 
