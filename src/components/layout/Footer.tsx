@@ -29,7 +29,7 @@ export default function Footer() {
         </nav>
       </div>
       <div className="shell site-footer__bottom">
-        <span>© 2026{year > 2026 ? `–${year}` : ''} {footer.copyright}</span>
+        <span>{footer.copyrightLabel} © 2026{year > 2026 ? `–${year}` : ''} {footer.copyright}</span>
         <span>GPLv3 · HarmonyOS NEXT</span>
       </div>
     </footer>

@@ -96,6 +96,7 @@ export interface SiteContent {
   footer: {
     statement: string
     links: LinkItem[]
+    copyrightLabel: string
     copyright: string
   }
   ui: {

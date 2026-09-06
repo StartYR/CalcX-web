@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://calcx.startyi.com/sitemap.xml
+Sitemap: https://calcx.startyi.com/docs/sitemap.xml

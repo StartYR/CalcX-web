@@ -10,7 +10,7 @@ const en: SiteContent = {
       { label: 'Capabilities', href: '#capabilities' },
       { label: 'Experience', href: '#showcase' },
       { label: 'Technology', href: '#technology' },
-      { label: 'Docs', href: '/docs', external: true },
+      { label: 'Help', href: '/docs', external: true },
     ],
     download: 'Get',
     menuOpen: 'Open navigation menu',
@@ -133,7 +133,8 @@ const en: SiteContent = {
       { label: 'Agreement', href: '/agreement/' },
       { label: 'Report an issue', href: 'https://github.com/StarHeartY/CalculatorX/issues/new', external: true },
     ],
-    copyright: 'Yi Rui',
+    copyrightLabel: 'Copyright',
+    copyright: 'StartYi',
   },
   ui: {
     switchLanguage: '切换到中文',

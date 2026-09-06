@@ -10,7 +10,7 @@ const zh: SiteContent = {
       { label: '能力', href: '#capabilities' },
       { label: '体验', href: '#showcase' },
       { label: '技术', href: '#technology' },
-      { label: '文档', href: '/docs', external: true },
+      { label: '帮助', href: '/docs', external: true },
     ],
     download: '获取',
     menuOpen: '打开导航菜单',
@@ -128,12 +128,13 @@ const zh: SiteContent = {
   footer: {
     statement: '面向 HarmonyOS NEXT 的原生数学工作区。',
     links: [
-      { label: '使用文档', href: '/docs', external: true },
+      { label: '使用帮助', href: '/docs', external: true },
       { label: '隐私政策', href: '/privacy/' },
       { label: '用户协议', href: '/agreement/' },
       { label: '问题反馈', href: 'https://github.com/StarHeartY/CalculatorX/issues/new', external: true },
     ],
-    copyright: 'Yi Rui（易睿）',
+    copyrightLabel: '版权所有',
+    copyright: 'StartYi',
   },
   ui: {
     switchLanguage: 'Switch to English',
