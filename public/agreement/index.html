@@ -97,12 +97,15 @@
         <p><strong>意见反馈：</strong>feedback@startyi.com</p>
 
         <footer>
-            版权所有 © <span id="copyright-year">2026</span> StartYi
+            <div>版权所有 © <span id="copyright-year">2026</span> StartYi</div>
+            <a id="icp-link" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer"
+                style="color: inherit; text-decoration: none;" hidden>赣ICP备2026021841号</a>
         </footer>
         <script>
             (function () {
                 var y = new Date().getFullYear();
                 if (y > 2026) document.getElementById('copyright-year').textContent = '2026–' + y;
+                if (location.hostname.endsWith('.startyi.cn')) document.getElementById('icp-link').hidden = false;
             })();
         </script>
     </div>

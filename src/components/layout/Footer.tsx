@@ -1,4 +1,19 @@
+import { useEffect, useState } from 'react'
 import { useContent, useLocale } from '../../i18n/LocaleContext'
+
+// ICP 备案号：仅在备案域名（*.startyi.cn）上显示
+function IcpLink() {
+  const [visible, setVisible] = useState(false)
+  useEffect(() => {
+    setVisible(window.location.hostname.endsWith('.startyi.cn'))
+  }, [])
+  if (!visible) return null
+  return (
+    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
+      赣ICP备2026021841号
+    </a>
+  )
+}
 
 export default function Footer() {
   const { footer } = useContent()
@@ -29,7 +44,10 @@ export default function Footer() {
         </nav>
       </div>
       <div className="shell site-footer__bottom">
-        <span>{footer.copyrightLabel} © 2026{year > 2026 ? `–${year}` : ''} {footer.copyright}</span>
+        <div className="site-footer__legal">
+          <span>{footer.copyrightLabel} © 2026{year > 2026 ? `–${year}` : ''} {footer.copyright}</span>
+          <IcpLink />
+        </div>
         <span>GPLv3 · HarmonyOS NEXT</span>
       </div>
     </footer>
