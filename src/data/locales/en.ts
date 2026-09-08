@@ -138,8 +138,9 @@ const en: SiteContent = {
   },
   ui: {
     switchLanguage: '切换到中文',
-    switchToDark: 'Switch to dark mode',
-    switchToLight: 'Switch to light mode',
+    themeSystem: 'Theme: follow system',
+    themeLight: 'Theme: light',
+    themeDark: 'Theme: dark',
   },
 }
 

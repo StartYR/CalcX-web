@@ -101,7 +101,8 @@ export interface SiteContent {
   }
   ui: {
     switchLanguage: string
-    switchToDark: string
-    switchToLight: string
+    themeSystem: string
+    themeLight: string
+    themeDark: string
   }
 }

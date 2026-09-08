@@ -138,8 +138,9 @@ const zh: SiteContent = {
   },
   ui: {
     switchLanguage: 'Switch to English',
-    switchToDark: '切换到深色模式',
-    switchToLight: '切换到浅色模式',
+    themeSystem: '主题：跟随系统',
+    themeLight: '主题：浅色',
+    themeDark: '主题：深色',
   },
 }
 
