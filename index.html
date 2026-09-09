@@ -33,6 +33,22 @@
         document.documentElement.dataset.theme = theme
       })()
     </script>
+    <script>
+      (() => {
+        // 每次打开网站按浏览器语言自动分配（中文 → 中文站，其他一律 → /en/）；
+        // sessionStorage 闩：本会话内手动切换语言不会被自动重定向覆盖，下次打开重新识别。
+        // navigator.webdriver: 预渲染（puppeteer）环境不做重定向，避免污染产物。
+        if (navigator.webdriver) return
+        const LATCH_KEY = 'calcx-locale-session'
+        if (sessionStorage.getItem(LATCH_KEY)) return
+        sessionStorage.setItem(LATCH_KEY, '1')
+        const wantsEn = !(navigator.language || '').toLowerCase().startsWith('zh')
+        const pathIsEn = location.pathname === '/en' || location.pathname.startsWith('/en/')
+        if (wantsEn !== pathIsEn) {
+          location.replace(pathIsEn ? '/' : '/en/')
+        }
+      })()
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",

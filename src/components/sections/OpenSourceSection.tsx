@@ -2,8 +2,8 @@ import { useRef } from 'react'
 import { gsap, useGSAP } from '../../animations/gsap'
 import { useContent } from '../../i18n/LocaleContext'
 
-const GITHUB_URL = 'https://github.com/StarHeartY/CalculatorX'
-const ARCHITECTURE_URL = 'https://github.com/StarHeartY/CalculatorX/blob/main/docs/ARCHITECTURE.md'
+const GITHUB_URL = 'https://github.com/StartYR/CalculatorX'
+const ARCHITECTURE_URL = 'https://github.com/StartYR/CalculatorX/blob/main/docs/ARCHITECTURE.md'
 
 export default function OpenSourceSection() {
   const root = useRef<HTMLElement>(null)

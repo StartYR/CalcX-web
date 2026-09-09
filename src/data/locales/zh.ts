@@ -130,7 +130,7 @@ const zh: SiteContent = {
     links: [
       { label: '使用帮助', href: '/docs', external: true },
       { label: '用户协议', href: '/agreement/' },
-      { label: '问题反馈', href: 'https://github.com/StarHeartY/CalculatorX/issues/new', external: true },
+      { label: '问题反馈', href: 'https://github.com/StartYR/CalculatorX/issues/new', external: true },
       { label: '隐私政策', href: '/privacy/' },
     ],
     copyrightLabel: '版权所有',

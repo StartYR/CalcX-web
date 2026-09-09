@@ -130,7 +130,7 @@ const en: SiteContent = {
     links: [
       { label: 'Help', href: '/docs', external: true },
       { label: 'Agreement', href: '/agreement/' },
-      { label: 'Report an issue', href: 'https://github.com/StarHeartY/CalculatorX/issues/new', external: true },
+      { label: 'Report an issue', href: 'https://github.com/StartYR/CalculatorX/issues/new', external: true },
       { label: 'Privacy', href: '/privacy/' },
     ],
     copyrightLabel: 'Copyright',

@@ -3,7 +3,7 @@ import { gsap, useGSAP } from '../../animations/gsap'
 import { useContent } from '../../i18n/LocaleContext'
 
 const APP_GALLERY_URL = 'https://appgallery.huawei.com/app/detail?id=com.startyi.calcx'
-const GITHUB_URL = 'https://github.com/StarHeartY/CalculatorX'
+const GITHUB_URL = 'https://github.com/StartYR/CalculatorX'
 
 export default function HeroSection() {
   const root = useRef<HTMLElement>(null)

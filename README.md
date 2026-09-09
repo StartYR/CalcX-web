@@ -3,7 +3,7 @@
 CalculatorX 官方产品网站，面向用户介绍这款为 HarmonyOS NEXT 打造的原生数学工作区。
 
 - 官方网站：<https://calcx.startyi.com>
-- CalculatorX 源码：<https://github.com/StarHeartY/CalculatorX>
+- CalculatorX 源码：<https://github.com/StartYR/CalculatorX>
 - AppGallery：<https://appgallery.huawei.com/app/detail?id=com.startyi.calcx>
 - 使用文档：<https://calcx.startyi.com/docs>
 

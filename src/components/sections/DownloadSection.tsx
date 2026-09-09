@@ -3,7 +3,7 @@ import { gsap, useGSAP } from '../../animations/gsap'
 import { useContent } from '../../i18n/LocaleContext'
 
 const APP_GALLERY_URL = 'https://appgallery.huawei.com/app/detail?id=com.startyi.calcx'
-const RELEASES_URL = 'https://github.com/StarHeartY/CalculatorX/releases'
+const RELEASES_URL = 'https://github.com/StartYR/CalculatorX/releases'
 
 export default function DownloadSection() {
   const root = useRef<HTMLElement>(null)
