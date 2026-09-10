@@ -46,11 +46,12 @@
   font-family: var(--font-sans);
   font-size: .9rem;
 }
-/* 备案号（仅 *.startyi.cn 显示），位于版权行下方 */
+/* 版权与备案信息横向排列，空间不足时换行 */
 .site-footer__legal {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 16px;
 }
 
 .site-footer__legal a {
