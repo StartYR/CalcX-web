@@ -59,7 +59,9 @@
             (function () {
                 var y = new Date().getFullYear();
                 if (y > 2026) document.getElementById('copyright-year').textContent = '2026–' + y;
-                if (location.hostname.endsWith('.startyi.cn')) document.getElementById('filing-links').hidden = false;
+                var hostname = location.hostname;
+                var isLocal = ['localhost', '127.0.0.1', '[::1]', '::1'].includes(hostname);
+                if (isLocal || hostname.endsWith('.startyi.cn')) document.getElementById('filing-links').hidden = false;
             })();
         </script>
     </div>

@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
 import { useContent, useLocale } from '../../i18n/LocaleContext'
 
-// 备案信息：仅在备案域名（*.startyi.cn）上显示
+// 备案信息：在备案域名和本机预览地址上显示
 function IcpLink() {
   const [visible, setVisible] = useState(false)
   useEffect(() => {
-    setVisible(window.location.hostname.endsWith('.startyi.cn'))
+    const hostname = window.location.hostname
+    const isLocal = ['localhost', '127.0.0.1', '[::1]', '::1'].includes(hostname)
+    setVisible(isLocal || hostname.endsWith('.startyi.cn'))
   }, [])
   if (!visible) return null
   return (
@@ -14,7 +16,7 @@ function IcpLink() {
         赣ICP备2026021841号-1
       </a>
       <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44011302005902" target="_blank" rel="noopener noreferrer">
-        <img src="/images/beian.png" alt="公安备案图标" width="18" height="20" />
+        <img src="/images/beian.png" alt="公安备案图标" width="16"  />
         粤公网安备44011302005902号
       </a>
     </div>
