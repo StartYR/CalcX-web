@@ -51,4 +51,7 @@ ul { padding-left: 1.25rem; }
 li + li { margin-top: 8px; }
 .update-time { display: inline-flex; margin: 0 8px 8px 0; padding: 6px 11px; color: var(--muted); background: var(--surface); border: 1px solid var(--line); border-radius: 999px; font-size: .76rem; }
 footer { margin-top: 70px; padding-top: 24px; color: var(--muted); border-top: 1px solid var(--line); font-size: .78rem; }
+.legal-footer, .filing-links:not([hidden]) { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; }
+.filing-links a { display: inline-flex; align-items: center; gap: 4px; color: inherit; text-decoration: none; white-space: nowrap; }
+.filing-links img { flex-shrink: 0; }
 @media (max-width: 600px) { body { padding-top: 38px; } .container::before { margin-bottom: 46px; } h2 { margin-top: 44px; } }

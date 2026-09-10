@@ -11,7 +11,7 @@ function IcpLink() {
   return (
     <div className="site-footer__filings">
       <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
-        赣ICP备2026021841号
+        赣ICP备2026021841号-1
       </a>
       <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44011302005902" target="_blank" rel="noopener noreferrer">
         <img src="/images/beian.png" alt="公安备案图标" width="18" height="20" />
