@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useContent, useLocale } from '../../i18n/LocaleContext'
 
-// ICP 备案号：仅在备案域名（*.startyi.cn）上显示
+// 备案信息：仅在备案域名（*.startyi.cn）上显示
 function IcpLink() {
   const [visible, setVisible] = useState(false)
   useEffect(() => {
@@ -9,9 +9,15 @@ function IcpLink() {
   }, [])
   if (!visible) return null
   return (
-    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
-      赣ICP备2026021841号
-    </a>
+    <div className="site-footer__filings">
+      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
+        赣ICP备2026021841号
+      </a>
+      <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44011302005902" target="_blank" rel="noopener noreferrer">
+        <img src="/images/beian.png" alt="公安备案图标" width="18" height="20" />
+        粤公网安备44011302005902号
+      </a>
+    </div>
   )
 }
 

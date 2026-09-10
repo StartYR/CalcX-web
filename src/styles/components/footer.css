@@ -61,6 +61,24 @@
   color: rgba(255, 255, 255, .58);
 }
 
+.site-footer__filings {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 16px;
+}
+
+.site-footer__filings a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.site-footer__filings img {
+  flex-shrink: 0;
+}
+
 @media (max-width: 700px) {
 
   .site-footer__grid {
