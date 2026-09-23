@@ -254,7 +254,7 @@
   font-family: var(--font-sans);
   font-size: .8rem;
 }
-/* 首页底部产品数据，例如“1.6.2”“5 类” */
+/* 首页底部产品数据，例如版本号、“5 类”等 */
 .hero-proof__item strong {
   font-size: 1.3rem;
   letter-spacing: -.04em;

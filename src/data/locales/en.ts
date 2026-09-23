@@ -1,4 +1,5 @@
 import type { SiteContent } from '../content.types'
+import { PRODUCT_VERSION } from '../version'
 
 const en: SiteContent = {
   meta: {
@@ -29,7 +30,7 @@ const en: SiteContent = {
     floatingFormula: 'f(x) = sin(x) / x',
   },
   proof: [
-    { value: '1.6.2', label: 'Current release' },
+    { value: PRODUCT_VERSION, label: 'Current release' },
     { value: '5', label: 'Graph types' },
     { value: '6×6', label: 'Matrix support' },
     { value: '172', label: 'Currencies & assets' },

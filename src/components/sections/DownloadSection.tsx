@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { gsap, useGSAP } from '../../animations/gsap'
 import { useContent } from '../../i18n/LocaleContext'
+import { PRODUCT_VERSION } from '../../data/version'
 
 const APP_GALLERY_URL = 'https://appgallery.huawei.com/app/detail?id=com.startyi.calcx'
 const RELEASES_URL = 'https://github.com/StartYR/CalculatorX/releases'
@@ -43,7 +44,7 @@ export default function DownloadSection() {
           </a>
         </div>
         <p className="download__footnote">{download.footnote}</p>
-        <span className="download__version">CALCULATORX / V1.6.2 / HARMONYOS NEXT</span>
+        <span className="download__version">CALCULATORX / V{PRODUCT_VERSION} / HARMONYOS NEXT</span>
       </div>
     </section>
   )

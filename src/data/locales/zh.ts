@@ -1,4 +1,5 @@
 import type { SiteContent } from '../content.types'
+import { PRODUCT_VERSION } from '../version'
 
 const zh: SiteContent = {
   meta: {
@@ -29,7 +30,7 @@ const zh: SiteContent = {
     floatingFormula: 'f(x) = sin(x) / x',
   },
   proof: [
-    { value: '1.6.2', label: '当前版本' },
+    { value: PRODUCT_VERSION, label: '当前版本' },
     { value: '5 类', label: '函数图像' },
     { value: '6×6', label: '矩阵支持' },
     { value: '172', label: '货币与资产' },

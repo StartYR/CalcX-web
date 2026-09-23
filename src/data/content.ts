@@ -1,4 +1,5 @@
 export type { Capability, LinkItem, ShowcaseId, ShowcaseItem, SiteContent } from './content.types'
+export { PRODUCT_VERSION } from './version'
 export { default as zh } from './locales/zh'
 export { default as en } from './locales/en'
 export { getContent } from '../i18n/LocaleContext'
