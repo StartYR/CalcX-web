@@ -95,42 +95,30 @@
 .download__actions {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
   margin-top: 35px;
 }
-.store-button {
-  display: inline-flex;
-  min-height: 72px;
-  align-items: center;
-  gap: 12px;
-  padding: 9px 22px;
-  color: #111216;
-  background: white;
-  border: 1px solid rgba(17, 18, 22, .15);
-  border-radius: 24px;
-  box-shadow: 0 14px 28px rgba(17, 18, 22, .11);
-  transition: transform 180ms var(--ease);
+.btn-adaptive {
+  border: 2px solid #1a1a1a;
+  color: #1a1a1a;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
 }
-.store-button:hover {
+.btn-adaptive-red {
+  border: 2px solid #da203e;
+  color: #da203e;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.download__actions a {
+  box-shadow: 0 10px 24px rgba(17, 18, 22, .08);
+  transition: transform 180ms var(--ease), box-shadow 180ms ease;
+}
+.download__actions a:hover {
   transform: translateY(-3px);
-}
-.store-button img {
-  width: 42px;
-  height: 42px;
-}
-.store-button span {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-/* AppGallery 商店按钮上方小字 */
-.store-button small {
-  font-size: .7rem;
-  letter-spacing: .08em;
-}
-/* AppGallery 商店按钮主文字 */
-.store-button strong {
-  font-size: 1.1rem;
+  box-shadow: 0 14px 28px rgba(17, 18, 22, .16);
 }
 /* 下载按钮下方说明文字 */
 .download__footnote {
@@ -174,9 +162,9 @@
     align-items: stretch;
   }
 
-  .download__actions .button,
-  .store-button {
-    width: 100%;
+  .download__actions a {
+    width: 100% !important;
+    justify-content: center;
   }
 
   .download__orbit {
