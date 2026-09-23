@@ -42,6 +42,7 @@ src/
 ├── animations/
 │   └── gsap.ts                # GSAP、React Hook 与 ScrollTrigger 统一注册入口
 ├── data/
+│   ├── version.ts             # 产品版本号唯一定义源
 │   ├── content.types.ts       # 双语内容的共享类型
 │   └── locales/               # 中文和英文内容对象
 ├── hooks/                     # 主题等通用状态

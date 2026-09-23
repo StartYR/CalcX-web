@@ -71,4 +71,9 @@ npm run dev
 - [项目全貌](./docs/PROJECT_OVERVIEW.md)：网站为什么存在、当前展示什么，以及它和另外两个 CalculatorX 仓库的关系。
 - [技术架构](./docs/ARCHITECTURE.md)：源码分层、运行时数据流、双语与主题机制、构建和部署链路。
 
-如果只是修改产品文案，通常从 `src/data/locales/` 开始；如果要调整页面结构，从 `src/App.tsx` 和 `src/components/sections/` 开始。
+## 常见内容更新
+
+- **更新产品版本号**：直接修改 [`src/data/version.ts`](./src/data/version.ts) 中的 `PRODUCT_VERSION` 常量即可。双语界面、下载区域及 HTML 结构化数据（JSON-LD）均会自动同步更新。
+- **修改产品文案**：编辑 `src/data/locales/zh.ts` 与 `src/data/locales/en.ts`。
+- **调整页面结构**：从 `src/App.tsx` 和 `src/components/sections/` 开始。
+

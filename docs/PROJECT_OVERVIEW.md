@@ -81,6 +81,16 @@ CalculatorX 相关内容分布在三个项目中：
 
 同一个产品事实可能同时出现在 `src/data/locales/zh.ts`、`src/data/locales/en.ts`、`index.html`、`en/index.html` 和结构化数据中。理解这些重复位置有助于避免只更新页面正文、却留下旧的搜索摘要或分享卡片。
 
+### 版本号更新机制
+
+产品版本号已收敛至统一入口：
+- **唯一定义源**：`src/data/version.ts` 中的 `PRODUCT_VERSION`；
+- **全站自动化链路**：
+  - 中英文主页的 Hero 指标项（`zh.ts` 与 `en.ts` 中的 `proof`）直接绑定该常量；
+  - 下载区域底部标识（`DownloadSection.tsx`）动态渲染该常量；
+  - 中英文静态入口（`index.html` 与 `en/index.html`）中的 JSON-LD `softwareVersion` 采用占位符，由 `vite.config.ts` 中的 Vite 插件在构建与预渲染时自动注入替换；
+- **更新操作**：发布新版本时，**只需修改 `src/data/version.ts` 中的字符串**，然后执行 `npm run build` 即可，无需手动修改多个文件。
+
 ## 当前实现特征
 
 - 中英文共用组件和类型，差异集中在结构化内容文件中；
