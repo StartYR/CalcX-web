@@ -50,7 +50,7 @@ export default function DownloadSection() {
             }}
           >
             <img
-              src="/images/appgallery-icon.png"
+              src="/images/AppGallery-icon.svg"
               alt="AppGallery Logo"
               style={{
                 width: '36px',
